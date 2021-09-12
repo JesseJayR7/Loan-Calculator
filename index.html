@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="topic"><h1>Loan Calculator</h1></div> -->
+        <div class="calculation-result">
+
+            <!-- Calculation -->
+            <div class="calculation">
+                <h1>Calculation</h1>
+                <form class="calc-inputs">
+                    <input class="vals" id = "principal" type="number" placeholder="Enter Principal..." required/>
+                    <input class="vals" id = "loan" type="number" placeholder="Enter Loan..." required/>
+                    <input class="vals" id = "interest" type="number" placeholder="Enter Interest Rate..." required/>
+                    <input class="vals" id = "years" type="number" placeholder="Enter Month(s)..." required/>
+                    <input class="calcs" id = "calculate" type="submit" value="Calculate"/>
+                </form>
+            </div>
+
+            <!-- Result -->
+            <div class="result">
+                <h1>Result</h1>
+                <form class="res-inputs">
+                    <div class="monthly-pay">
+                        <input class="vals2" type="submit" value="Monthly Pay"/>
+                        <p class="val3" id = 'monthlyvalue'></p>
+                    </div>
+                    <div class="total-repayment"> 
+                        <input class="vals2" type="submit" value="Total Repayment"/>
+                        <p class="val3" id="total-repay"></p>
+                    </div>
+                    <div class="total-interest">
+                        <input class="vals2" type="submit" value="Total Interest Cost"/>
+                        <p class="val3" id = "total-inter"></p>
+                    </div>
+                 
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
